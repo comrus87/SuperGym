@@ -1,0 +1,238 @@
+.intro {
+  background: url("../img/supermen-desktop.jpg") no-repeat, url("../img/bg-desktop.jpg") no-repeat;
+  background-size: auto, cover;
+  background-position: left 65% top 51px, center;
+  background-color: #b80027;
+}
+
+.intro__wrap {
+  @include wrap-desktop;
+  padding-top: 28px;
+  padding-bottom: 96px;
+}
+
+.intro__top-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.intro__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.intro__main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 380px;
+  margin-left: 18px;
+}
+
+.page-header__logo {
+  color: $white-color;
+  font-family: $bebas;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.page-header__phone {
+  color: $white-color;
+  font-family: $bebas;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.intro__main-container span {
+  color: $white-color;
+  font-family: $bebas;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  margin-bottom: 4px;
+  margin-top: 115px;
+}
+
+.intro__title {
+  color: $white-color;
+  font-family: $bebas;
+  font-size: 109px;
+  line-height: 109px;
+  text-align: right;
+  letter-spacing: 0.03em;
+  width: 298px;
+  margin: 0;
+}
+
+.intro__description {
+  margin-right: 266px;
+  margin-top: -84px;
+}
+
+.intro__description p {
+  color: $white-color;
+  font-family: $roboto-condensed;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  width: 113px;
+  text-align: right;
+}
+
+.intro__button {
+  background-color: transparent;
+  border: 4px solid $white-color;
+  color: $white-color;
+  font-family: Roboto Condensed;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  display: block;
+  width: 234px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 19px 0 18px;
+  cursor: pointer;
+  margin-top: 85px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.intro__social-list {
+  @include list-default;
+  margin: 0 -2px -4px 0;
+}
+
+.intro__social-list a {
+  color: $white-color;
+  font-family: $roboto-condensed;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 20px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+
+@media (max-width: $tablet-width) {
+  .intro {
+    background: url("../img/supermen-tablet.jpg") no-repeat, url("../img/bg-tablet.jpg") no-repeat;
+    background-size: auto, cover;
+    background-position: left 90% top 82px, center;
+    background-color: #b80027;
+  }
+
+  .intro__wrap {
+    @include wrap-tablet;
+    padding-top: 38px;
+    padding-bottom: 105px;
+  }
+
+  .intro__social-list {
+    display: none;
+  }
+
+  .page-header__logo {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .page-header__phone {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+
+  .intro__main-container span {
+    font-size: 34px;
+    line-height: 34px;
+    margin-top: 72px;
+  }
+
+  .intro__title {
+    font-size: 86px;
+    line-height: 86px;
+    width: 235px;
+  }
+
+  .intro__button {
+    width: 185px;
+    margin-top: 58px;
+  }
+
+  .intro__main-container {
+    width: 325px;
+    margin-left: 0;
+  }
+
+  .intro__description {
+    margin-right: 212px;
+    margin-top: -76px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .intro {
+    background: url("../img/bg-mobile.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #b80027;
+  }
+
+  .intro__wrap {
+    @include wrap-mobile;
+    padding-top: 18px;
+    padding-bottom: 80px;
+  }
+
+  .page-header__logo,
+  .page-header__phone {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .intro__main-container span {
+    font-size: 28px;
+    line-height: 28px;
+    margin-top: 75px;
+    margin-bottom: 7px;
+  }
+
+  .intro__title {
+    font-size: 78px;
+    line-height: 78px;
+    width: 213px;
+  }
+
+  .intro__button {
+    width: 100%;
+    margin-top: 55px;
+  }
+
+  .intro__main-container {
+    width: 100%;
+  }
+
+  .intro__description {
+    margin-right: 178px;
+    margin-top: -70px;
+  }
+}
