@@ -1,0 +1,78 @@
+.gym {
+  @include wrap-desktop;
+  display: flex;
+  padding: 120px 103px 120px 163px;
+}
+
+.gym__title {
+  color: $dark-blue-color;
+  font-family: $bebas;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  margin: 45px 0 0 0;
+}
+
+.gym__description-container {
+  display: flex;
+  flex-direction: column;
+  width: 355px;
+  margin-right: 22px;
+}
+
+.gym__description-container span {
+  display: block;
+  font-family: $roboto-condensed;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: $dark-blue-color;
+  margin-top: 9px;
+  margin-bottom: 39px;
+}
+
+.gym__description-container p {
+  font-family: $roboto-condensed;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: $dark-blue-color;
+  margin: 0 0 8px 0;
+}
+
+.gym__photo-container {
+  width: 723px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.gym__video {
+  position: relative;
+  height: 228px;
+  width: 364px;
+  margin-right: 359px;
+  margin-top: -115px;
+}
+
+.gym__video img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.gym__video button {
+  position: relative;
+  display: block;
+  margin: 65px auto 0;
+  width: 100px;
+  height: 100px;
+  border: none;
+  background: url("../img/play.svg") no-repeat center;
+  cursor: pointer;
+  border-radius: 50%;
+
+  &:hover {
+    background: url("../img/play-hover.svg") no-repeat center;
+  }
+}
