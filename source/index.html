@@ -10,9 +10,9 @@
 </head>
 <body>
 
-<!--   <div style="display:none">
+  <div style="display:none">
     <include src="build/img/sprite.svg"></include>
-  </div> -->
+  </div>
 
   <main>
     <section class="intro">
@@ -53,7 +53,6 @@
            <source media="(max-width: 1199px)" srcset="img/hall-tablet.jpg">
            <img class="gym__photo" src="img/hall-desktop.jpg" width="660" height="401" alt="Тренажерный зал">
         </picture>
-
         <div class="gym__video">
           <picture>
             <source media="(max-width: 767px)" srcset="img/video-mobile.jpg">
@@ -62,6 +61,139 @@
           </picture>
         <button type="button" aria-label="Запустить видео"></button>
        </div>
+      </div>
+    </section>
+
+    <section class="subscriptions">
+      <div class="subscriptions__wrap">
+        <h2 class="subscriptions__title">Абонементы</h2>
+        <div class="subscriptions__controls-wrap">
+          <ul class="subscriptions__controls-list">
+            <li><span class="subscriptions__item-month subscriptions__item-month--active">1 месяц</span></li>
+            <li><span class="subscriptions__item-month">6 месяцев</span></li>
+            <li><span class="subscriptions__item-month">12 месяцев</span></li>
+          </ul>
+        </div>
+
+        <ul class="subscriptions__tabs-list">
+          <li>
+            <h3>С тренером</h3>
+            <p>12 занятий</p>
+            <span class="subscriptions__bg-price">5000</span>
+            <div class="subscriptions__price-container">
+              <span class="subscriptions__price">5000</span>
+              <svg class="subscriptions__price-ruble" width="30" height="42">
+                <use xlink:href="#ruble"></use>
+              </svg>
+            </div>
+            <a class="subscriptions__buy-link" href="#">купить абонемент</a>
+          </li>
+          <li>
+            <h3>Дневной</h3>
+            <p>с 8:00 до 17:00</p>
+            <span class="subscriptions__bg-price">1700</span>
+            <div class="subscriptions__price-container">
+              <span class="subscriptions__price">1700</span>
+              <svg class="subscriptions__price-ruble" width="30" height="42">
+                <use xlink:href="#ruble"></use>
+              </svg>
+            </div>
+            <a class="subscriptions__buy-link" href="#">купить абонемент</a>
+          </li>
+          <li>
+            <h3>Полный день</h3>
+            <p>с 8:00 до 22:00</p>
+            <span class="subscriptions__bg-price">2700</span>
+            <div class="subscriptions__price-container">
+              <span class="subscriptions__price">2700</span>
+              <svg class="subscriptions__price-ruble" width="30" height="42">
+                <use xlink:href="#ruble"></use>
+              </svg>
+            </div>
+
+            <a class="subscriptions__buy-link" href="#">купить абонемент</a>
+          </li>
+        </ul>
+
+        <ul class="subscriptions__tabs-list">
+          <li>
+            <h3>С тренером</h3>
+            <p>30 занятий</p>
+            <span class="subscriptions__bg-price">10000</span>
+            <div class="subscriptions__price-container">
+              <span class="subscriptions__price">10000</span>
+              <svg class="subscriptions__price-ruble" width="30" height="42">
+                <use xlink:href="#ruble"></use>
+              </svg>
+            </div>
+            <a class="subscriptions__buy-link" href="#">купить абонемент</a>
+          </li>
+          <li>
+            <h3>Дневной</h3>
+            <p>с 8:00 до 17:00</p>
+            <span class="subscriptions__bg-price">12000</span>
+            <div class="subscriptions__price-container">
+              <span class="subscriptions__price">12000</span>
+              <svg class="subscriptions__price-ruble" width="30" height="42">
+                <use xlink:href="#ruble"></use>
+              </svg>
+            </div>
+            <a class="subscriptions__buy-link" href="#">купить абонемент</a>
+          </li>
+          <li>
+            <h3>Полный день</h3>
+            <p>с 8:00 до 22:00</p>
+            <span class="subscriptions__bg-price">17000</span>
+            <div class="subscriptions__price-container">
+              <span class="subscriptions__price">17000</span>
+              <svg class="subscriptions__price-ruble" width="30" height="42">
+                <use xlink:href="#ruble"></use>
+              </svg>
+            </div>
+
+            <a class="subscriptions__buy-link" href="#">купить абонемент</a>
+          </li>
+        </ul>
+
+        <ul class="subscriptions__tabs-list">
+          <li>
+            <h3>С тренером</h3>
+            <p>50 занятий</p>
+            <span class="subscriptions__bg-price">17000</span>
+            <div class="subscriptions__price-container">
+              <span class="subscriptions__price">17000</span>
+              <svg class="subscriptions__price-ruble" width="30" height="42">
+                <use xlink:href="#ruble"></use>
+              </svg>
+            </div>
+            <a class="subscriptions__buy-link" href="#">купить абонемент</a>
+          </li>
+          <li>
+            <h3>Дневной</h3>
+            <p>с 8:00 до 17:00</p>
+            <span class="subscriptions__bg-price">20000</span>
+            <div class="subscriptions__price-container">
+              <span class="subscriptions__price">20000</span>
+              <svg class="subscriptions__price-ruble" width="30" height="42">
+                <use xlink:href="#ruble"></use>
+              </svg>
+            </div>
+            <a class="subscriptions__buy-link" href="#">купить абонемент</a>
+          </li>
+          <li>
+            <h3>Полный день</h3>
+            <p>с 8:00 до 22:00</p>
+            <span class="subscriptions__bg-price">25000</span>
+            <div class="subscriptions__price-container">
+              <span class="subscriptions__price">25000</span>
+              <svg class="subscriptions__price-ruble" width="30" height="42">
+                <use xlink:href="#ruble"></use>
+              </svg>
+            </div>
+
+            <a class="subscriptions__buy-link" href="#">купить абонемент</a>
+          </li>
+        </ul>
       </div>
     </section>
 
