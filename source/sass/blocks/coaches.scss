@@ -1,0 +1,98 @@
+.coaches {
+  @include wrap-desktop;
+  padding-bottom: 150px;
+}
+
+.coaches__title {
+  font-family: $bebas;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: $dark-blue-color;
+  margin: 0 0 62px 0;
+}
+
+.coaches__info {
+  display: none;
+}
+
+.coaches__list {
+  @include list-default;
+  display: flex;
+  flex-direction: nowrap;
+  justify-content: space-between;
+}
+
+.coaches__item {
+  position: relative;
+  width: 260px;
+  height: 294px;
+  cursor: pointer;
+
+  &:hover {
+    .coaches__info {
+      display: block;
+    }
+  }
+}
+
+.coaches__photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 260px;
+  height: 294px;
+}
+
+.coaches__name,
+.coaches__name-hover {
+  font-family: $roboto-condensed;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: $white-color;
+  text-align: center;
+}
+
+.coaches__name {
+  margin: 251px 0 0 0;
+}
+
+.coaches__name-hover {
+  margin: 0 0 10px 0;
+}
+
+.coaches__info {
+  width: 260px;
+  height: 294px;
+  background: rgba(16, 38, 84, 0.89);
+  padding: 58px 46px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.coaches__info p {
+  font-family: $roboto-condensed;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #b6bdcc;
+  text-align: center;
+  margin: 0 0 66px 0;
+}
+
+.coaches__info-list {
+  color: $white-color;
+  list-style-type: disc;
+  padding: 0 0 0 10px;
+}
+
+.coaches__info-list li {
+  font-family: $roboto-condensed;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $white-color;
+}

@@ -6,6 +6,7 @@
 .competitions__container {
   display: flex;
   flex-wrap: nowrap;
+  width: 100%;
 }
 
 .competitions__title {
@@ -93,7 +94,6 @@
 
 .competitions__titel-container {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: space-between;
 }
 
@@ -162,7 +162,6 @@
     padding-top: 3px;
     margin-bottom: 10px;
   }
-
 
 
 

@@ -1,5 +1,18 @@
 .subscriptions {
   background-color: #f8f9fc;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 321px;
+    height: 384px;
+    background: url("../img/flapjacks-desktop.png") no-repeat center;
+    position: absolute;
+    bottom: -97px;
+    right: -18px;
+    z-index: 1;
+  }
 }
 
 .subscriptions__wrap {
@@ -60,6 +73,8 @@
   flex-wrap: wrap;
   width: 100%;
   margin-top: 39px;
+  position: relative;
+  z-index: 10;
 }
 
 .subscriptions__tabs-list li {
@@ -163,6 +178,16 @@
 }
 
 @media (max-width: $tablet-width) {
+  .subscriptions {
+    &::after {
+      width: 347px;
+      height: 444px;
+      background: url("../img/flapjack-tablet.png") no-repeat center;
+      bottom: -125px;
+      right: 0;
+    }
+  }
+
   .subscriptions__wrap {
     @include wrap-tablet;
     padding: 96px 163px 60px;
@@ -205,6 +230,12 @@
 }
 
 @media (max-width: $mobile-width) {
+  .subscriptions {
+    &::after {
+      display: none;
+    }
+  }
+
   .subscriptions__wrap {
     @include wrap-mobile;
     padding: 67px 15px 34px;
