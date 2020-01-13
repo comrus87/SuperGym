@@ -1,0 +1,176 @@
+.competitions {
+  @include wrap-desktop;
+  padding: 120px 103px;
+}
+
+.competitions__container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.competitions__title {
+  font-family: $bebas;
+  font-size: 90px;
+  line-height: 90px;
+  letter-spacing: 0.03em;
+  color: $white-color;
+  width: 201px;
+  margin: -4px 10px 0 0;
+}
+
+.competitions__block-data p,
+.competitions__description {
+  font-family: $roboto-condensed;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: $white-color;
+}
+
+.competitions__description {
+  margin: 14px 0 46px 0;
+}
+
+.competitions__count-data,
+.competitions__time {
+  font-family: $roboto-condensed;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: $white-color;
+}
+
+.competitions__time {
+  border-top: 1px solid $white-color;
+  padding-top: 3px;
+  margin-bottom: 7px;
+}
+
+.competitions__text-data {
+  font-family: $roboto-condensed;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $white-color;
+  display: block;
+  width: 37px;
+  margin-left: 7px;
+}
+
+.competitions__container-data {
+  width: 64px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid $white-color;
+  padding-top: 4px;
+  margin-bottom: 20px;
+}
+
+.competitions__link {
+  display: block;
+  font-family: $roboto-condensed;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 4px solid $white-color;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto 0;
+  padding: 24px 0;
+  cursor: pointer;
+  color: $white-color;
+}
+
+.competitions__info {
+  background: $red-color;
+  display: flex;
+  flex-direction: column;
+  padding: 83px 78px 85px;
+  width: 43%;
+}
+
+.competitions__titel-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.competitions__block-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.competitions__title-data,
+.competitions__title-time {
+  margin: 0 0 3px 0;
+}
+
+.competitions__picture img {
+  display: block;
+  height: 100%;
+}
+
+@media (max-width: $tablet-width) {
+  .competitions {
+    @include wrap-tablet;
+    padding: 100px 45px;
+  }
+
+  .competitions__title {
+    font-size: 52px;
+    line-height: 52px;
+    width: 117px;
+    margin: 0;
+  }
+
+  .competitions__block-data p,
+  .competitions__description {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .competitions__count-data,
+  .competitions__time {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .competitions__text-data {
+    font-size: 10px;
+    line-height: 15px;
+    width: 26px;
+    margin-left: 3px;
+  }
+
+  .competitions__link {
+    font-size: 10px;
+    line-height: 12px;
+    padding: 16px 0;
+    border: 2px solid $white-color;
+  }
+
+  .competitions__info {
+    padding: 48px 44px 50px;
+    // Почем не получается задать этот размер
+    width: 292px;
+  }
+
+  .competitions__container-data {
+    width: 42px;
+    padding-top: 3px;
+    margin-bottom: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+}

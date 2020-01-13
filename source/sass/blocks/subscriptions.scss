@@ -165,7 +165,7 @@
 @media (max-width: $tablet-width) {
   .subscriptions__wrap {
     @include wrap-tablet;
-    padding: 96px 163px 100px;
+    padding: 96px 163px 60px;
   }
 
   .subscriptions__title {
