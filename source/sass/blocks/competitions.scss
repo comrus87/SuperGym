@@ -3,6 +3,15 @@
   padding: 120px 103px;
 }
 
+.competitions__img-tablet,
+.competitions__img-mobile {
+  display: none;
+}
+
+.competitions__img-desktop {
+  display: block;
+}
+
 .competitions__container {
   display: flex;
   flex-wrap: nowrap;
@@ -118,7 +127,7 @@
  }
 
 .competitions__picture img {
-  display: block;
+  width: 100%;
   height: 100%;
 }
 
@@ -126,6 +135,15 @@
   .competitions {
     @include wrap-tablet;
     padding: 100px 45px;
+  }
+
+  .competitions__img-desktop,
+  .competitions__img-mobile {
+    display: none;
+  }
+
+  .competitions__img-tablet {
+    display: block;
   }
 
   .competitions__title {
@@ -197,6 +215,14 @@
     padding: 70px 15px;
   }
 
+  .competitions__img-desktop,
+  .competitions__img-tablet {
+    display: none;
+  }
+
+  .competitions__img-mobile {
+    display: block;
+  }
 
   .competitions__container {
     flex-wrap: wrap;

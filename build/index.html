@@ -29,7 +29,9 @@
 <stop stop-color="#003D85"></stop>
 <stop offset="0.885417" stop-color="#B80027"></stop>
 </linearGradient>
-</defs><symbol id="facebook" viewBox="0 0 12 24">
+</defs><symbol id="arrow" viewBox="0 0 18 34">
+<path d="M17 1L0.999999 17L17 33" stroke="#AFAFAF"></path>
+</symbol><symbol id="facebook" viewBox="0 0 12 24">
 <path d="M11.5481 0.0049936L8.66986 0C5.43624 0 3.34653 2.31828 3.34653 5.90643V8.62969H0.452578C0.202506 8.62969 0 8.84891 0 9.11932V13.065C0 13.3354 0.202736 13.5544 0.452578 13.5544H3.34653V23.5106C3.34653 23.781 3.54904 24 3.79911 24H7.5749C7.82497 24 8.02748 23.7808 8.02748 23.5106V13.5544H11.4112C11.6613 13.5544 11.8638 13.3354 11.8638 13.065L11.8652 9.11932C11.8652 8.98948 11.8174 8.86514 11.7326 8.77326C11.6479 8.68138 11.5324 8.62969 11.4123 8.62969H8.02748V6.32115C8.02748 5.21157 8.27201 4.64829 9.60873 4.64829L11.5477 4.64755C11.7975 4.64755 12 4.42833 12 4.15817V0.494367C12 0.224462 11.7977 0.00549296 11.5481 0.0049936Z" fill="white"></path>
 </symbol><symbol id="insta" viewBox="0 0 24 24">
 <path d="M17.5034 0H6.49658C2.91431 0 0 2.91431 0 6.49658V17.5036C0 21.0857 2.91431 24 6.49658 24H17.5036C21.0857 24 24 21.0857 24 17.5036V6.49658C24 2.91431 21.0857 0 17.5034 0V0ZM12 18.5623C8.38147 18.5623 5.43768 15.6185 5.43768 12C5.43768 8.38147 8.38147 5.43768 12 5.43768C15.6185 5.43768 18.5623 8.38147 18.5623 12C18.5623 15.6185 15.6185 18.5623 12 18.5623ZM18.7192 6.98529C17.6499 6.98529 16.7802 6.11554 16.7802 5.0462C16.7802 3.97687 17.6499 3.10693 18.7192 3.10693C19.7886 3.10693 20.6585 3.97687 20.6585 5.0462C20.6585 6.11554 19.7886 6.98529 18.7192 6.98529Z" fill="white"></path>
@@ -88,17 +90,17 @@
         <p class="gym__text-desktop">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
       </div>
       <div class="gym__photo-container">
-        <picture class="gym__photo-picture">
-           <source media="(max-width: 767px)" srcset="img/hall-mobile.jpg">
-           <source media="(max-width: 1199px)" srcset="img/hall-tablet.jpg">
-           <img class="gym__photo" src="img/hall-desktop.jpg" width="660" height="401" alt="Тренажерный зал">
-        </picture>
-        <div class="gym__video">
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/video-mobile.jpg">
-            <source media="(max-width: 1199px)" srcset="img/video-tablet.jpg">
-            <img src="img/video-desktop.jpg" width="364" height="228" alt="Видео зала">
-          </picture>
+
+        <img class="gym__photo-desktop" src="img/hall-desktop.jpg" width="660" height="401" alt="Тренажерный зал">
+        <img class="gym__photo-tablet" src="img/hall-tablet.jpg" width="678" height="345" alt="Тренажерный зал">
+        <img class="gym__photo-mobile" src="img/hall-mobile.jpg" width="320" height="313" alt="Тренажерный зал">
+
+        <div class="gym__video-container">
+
+            <img class="gym__video-desktop" src="img/video-desktop.jpg" width="364" height="228" alt="Видео зала">
+            <img class="gym__video-tablet" src="img/video-tablet.jpg" width="266" height="167" alt="Видео зала">
+            <img class="gym__video-mobile" src="img/video-mobile.jpg" width="320" height="167" alt="Видео зала">
+
         <button type="button" aria-label="Запустить видео"></button>
        </div>
       </div>
@@ -259,17 +261,17 @@
         </div>
 
         <div class="competitions__picture">
-          <picture>
-             <source media="(max-width: 767px)" srcset="img/games-mobile.jpg">
-             <source media="(max-width: 1199px)" srcset="img/games-tablet.jpg">
-             <img src="img/games-desktop.jpg" width="660" height="500" alt="Спортивные соревнования">
-          </picture>
+           <img class="competitions__img-desktop" src="img/games-desktop.jpg" width="660" height="500" alt="Спортивные соревнования">
+           <img class="competitions__img-tablet" src="img/games-tablet.jpg" width="386" height="292" alt="Спортивные соревнования">
+           <img class="competitions__img-mobile" src="img/games-mobile.jpg" width="290" height="292" alt="Спортивные соревнования">
         </div>
       </div>
 
     </section>
 
 <!--     <section class="coaches">
+
+
       <h2 class="coaches__title">Тренеры</h2>
       <ul class="coaches__list">
         <li class="coaches__item">
