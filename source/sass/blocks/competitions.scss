@@ -82,6 +82,10 @@
   padding: 24px 0;
   cursor: pointer;
   color: $white-color;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .competitions__info {
@@ -90,6 +94,7 @@
   flex-direction: column;
   padding: 83px 78px 85px;
   width: 43%;
+  max-height: 500px;
 }
 
 .competitions__titel-container {
@@ -107,6 +112,11 @@
   margin: 0 0 3px 0;
 }
 
+ .competitions__picture {
+  width: 57%;
+  max-height: 500px;
+ }
+
 .competitions__picture img {
   display: block;
   height: 100%;
@@ -122,7 +132,7 @@
     font-size: 52px;
     line-height: 52px;
     width: 117px;
-    margin: 0;
+    margin: -2px 0 0 0;
   }
 
   .competitions__block-data p,
@@ -134,12 +144,16 @@
   .competitions__count-data,
   .competitions__time {
     font-size: 24px;
-    line-height: 36px;
+    line-height: 24px;
+  }
+
+  .competitions__time {
+    margin-bottom: 0;
   }
 
   .competitions__text-data {
     font-size: 10px;
-    line-height: 15px;
+    line-height: 12px;
     width: 26px;
     margin-left: 3px;
   }
@@ -147,29 +161,59 @@
   .competitions__link {
     font-size: 10px;
     line-height: 12px;
-    padding: 16px 0;
+    padding: 13px 0 14px;
     border: 2px solid $white-color;
   }
 
   .competitions__info {
-    padding: 48px 44px 50px;
-    // Почем не получается задать этот размер
-    width: 292px;
+    padding: 48px 45px 50px;
+    width: 43%;
+    max-height: 292px;
+  }
+
+  .competitions__picture {
+    max-height: 292px;
   }
 
   .competitions__container-data {
     width: 42px;
-    padding-top: 3px;
-    margin-bottom: 10px;
+    padding-top: 2px;
+    margin-bottom: 7px;
+  }
+
+  .competitions__title-data,
+  .competitions__title-time {
+    margin: 0;
+  }
+
+  .competitions__description {
+    margin: 4px 0 28px 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .competitions {
+    @include wrap-mobile;
+    padding: 70px 15px;
   }
 
 
+  .competitions__container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 
+  .competitions__info {
+    padding: 49px 45px;
+    width: 100%;
+  }
 
+  .competitions__picture {
+    width: 100%;
+  }
 
-
-
-
-
-
+  .competitions__picture img {
+    height: 292px;
+    width: 100%;
+  }
 }
