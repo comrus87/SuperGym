@@ -1,6 +1,6 @@
 .competitions {
   @include wrap-desktop;
-  padding: 120px 103px;
+  padding: 120px 103px 117px;
 }
 
 .competitions__img-tablet,
@@ -134,7 +134,7 @@
 @media (max-width: $tablet-width) {
   .competitions {
     @include wrap-tablet;
-    padding: 100px 45px;
+    padding: 100px 45px 96px;
   }
 
   .competitions__img-desktop,
