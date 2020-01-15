@@ -84,11 +84,17 @@ function switchSlider(step) {
   });
 }
 
-if (window.matchMedia('(max-width: 767px)').matches) {
-  switchSlider(1);
-} else if (window.matchMedia('(max-width: 1199px)').matches) {
-  switchSlider(2);
-} else {
-  switchSlider(4);
+
+function changeSlider() {
+  if (window.matchMedia('(max-width: 767px)').matches) {
+    switchSlider(1);
+  } else if (window.matchMedia('(max-width: 1199px)').matches) {
+    switchSlider(2);
+  } else {
+    switchSlider(4);
+  }
 }
 
+changeSlider();
+
+window.addEventListener('resize', changeSlider);
