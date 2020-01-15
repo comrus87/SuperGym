@@ -7,6 +7,7 @@ var subscriptionsPage = document.querySelector('.subscriptions');
 var slides = document.querySelectorAll('.coaches__item');
 var prev = document.querySelector('.coaches__arrow-left');
 var next = document.querySelector('.coaches__arrow-right');
+var coachesPage = document.querySelector('.coaches');
 
 
 function switchTabs() {
@@ -97,6 +98,8 @@ function changeSlider() {
   }
 }
 
-changeSlider();
+if (coachesPage) {
+  changeSlider();
+  window.addEventListener('resize', changeSlider);
+}
 
-window.addEventListener('resize', changeSlider);
