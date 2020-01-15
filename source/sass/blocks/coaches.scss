@@ -73,7 +73,7 @@
   width: 100%;
   min-height: 294px;
   background: rgba(16, 38, 84, 0.89);
-  padding: 57px 46px 15px;
+  padding: 57px 25px 10px;
   position: absolute;
   top: 0;
   left: 0;
@@ -92,7 +92,8 @@
 .coaches__info-list {
   color: $white-color;
   list-style-type: disc;
-  padding: 0 0 0 25px;
+  padding: 0 0 0 46px;
+  min-width: 160px;
 }
 
 .coaches__info-list li {
@@ -155,8 +156,7 @@
   }
 
   .coaches__container {
-    width: 566px;
-    margin: 0 auto;
+    width: 100%;
   }
 
   .coaches__list {
@@ -164,17 +164,9 @@
   }
 
   .coaches__item {
-    width: 268px;
+    width: calc(50% - 15px);
     margin-right: 30px;
     margin-bottom: 30px;
-  }
-
-  .coaches__info {
-    width: 100%;
-    padding: 57px 46px 15px;
-    position: absolute;
-    top: 0;
-    left: 0;
   }
 
   .coaches__name-hover {
@@ -199,16 +191,45 @@
   .coaches__title {
     font-size: 32px;
     line-height: 32px;
-    margin: 0 auto 50px;
-  }
-
-  .coaches__container {
-    width: 226px;
-    width: 274px
+    margin: 0 auto 45px;
   }
 
   .coaches__item {
+    width: 100%;
+    min-height: 274px;
     margin-right: 0;
   }
 
+  .coaches__info {
+    min-height: 274px;
+    padding: 45px 15px 10px;
+  }
+
+  .coaches__info p {
+    margin: 2px 0 33px 0;
+  }
+
+  .coaches__name-hover {
+    margin-left: 0;
+  }
+
+  .coaches__info-list {
+    padding: 0 0 0 35px;
+  }
+
+  .coaches__arrow-left svg,
+  .coaches__arrow-right svg {
+    width: 10px;
+    height: 19px;
+  }
+
+  .coaches__arrow-left {
+    left: -32px;
+    top: 128px;
+  }
+
+  .coaches__arrow-right {
+    right: -32px;
+    top: 128px;
+  }
 }

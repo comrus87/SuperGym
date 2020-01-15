@@ -212,7 +212,7 @@
 @media (max-width: $mobile-width) {
   .competitions {
     @include wrap-mobile;
-    padding: 70px 15px;
+    padding: 70px 15px 68px;
   }
 
   .competitions__img-desktop,

@@ -59,7 +59,9 @@ function switchSlider(step) {
 
 
     for (var i = n; i < k; i++) {
-      slides[i].style.display = 'block';
+      if (slides[i]) {
+        slides[i].style.display = 'block';
+      }
     }
   }
 
