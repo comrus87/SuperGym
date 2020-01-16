@@ -92,7 +92,8 @@
   cursor: pointer;
   color: $white-color;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.7;
   }
 }
@@ -185,7 +186,7 @@
 
   .competitions__info {
     padding: 48px 45px 50px;
-    width: 43%;
+    width: calc(100% - 386px);
     max-height: 292px;
   }
 

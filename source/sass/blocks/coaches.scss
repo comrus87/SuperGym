@@ -127,7 +127,8 @@
   position: absolute;
   top: 131px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.7;
   }
 }
@@ -145,7 +146,7 @@
 @media (max-width: $tablet-width) {
   .coaches {
     @include wrap-tablet;
-    padding: 0 100px 101px;
+    padding: 0 100px 70px;
   }
 
   .coaches__title {
@@ -185,7 +186,7 @@
 @media (max-width: $mobile-width) {
   .coaches {
     @include wrap-mobile;
-    padding: 0 47px 70px;
+    padding: 0 47px 40px;
   }
 
   .coaches__title {
