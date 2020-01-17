@@ -1,0 +1,78 @@
+.page-footer__wrap {
+  border-top: 1px solid #74819c;
+  background-image: linear-gradient(90deg, #102654 0%, #102654 50%, #ffffff 50%, #ffffff 100%);
+}
+
+.page-footer__top-block {
+  display: flex;
+  @include wrap-desktop;
+  // width: 100%;
+}
+
+.page-footer__form {
+  width: 50%;
+  background: transparent;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-right: 29.3%;
+}
+
+.page-footer__contacts {
+
+}
+
+.page-footer__form-title {
+  font-family: $bebas;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: $white-color;
+  width: 410px;
+  margin: 0 0 58px 0;
+}
+
+.page-footer__form-input {
+  display: block;
+  border: none;
+  border-bottom: 1px solid #74819c;
+  background: transparent;
+  outline: none;
+  font-family: $roboto-condensed;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $white-color;
+  width: 46.3%;
+
+  &::placeholder {
+    font-family: $roboto-condensed;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $white-color;
+  }
+}
+
+.page-footer__input-container {
+  display: flex;
+  width: 410px;
+  justify-content: space-between;
+}
+
+
+.page-footer__form-button {
+    font-family: $roboto-condensed;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $white-color;
+    border: 3px solid $white-color;
+    width: 100%;
+    background: transparent;
+    padding: 21px 0;
+    cursor: pointer;
+    width: 410px;
+    margin-top: 30px;
+}

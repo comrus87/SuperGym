@@ -4,10 +4,15 @@ var tabControls = document.querySelector('.subscriptions__controls-list');
 var tabContent = document.querySelectorAll('.subscriptions__tabs-list');
 var subscriptionsPage = document.querySelector('.subscriptions');
 
-var slides = document.querySelectorAll('.coaches__item');
-var prev = document.querySelector('.coaches__arrow-left');
-var next = document.querySelector('.coaches__arrow-right');
+var coachesSlides = document.querySelectorAll('.coaches__item');
+var coachesPrev = document.querySelector('.coaches__arrow-left');
+var coachesNext = document.querySelector('.coaches__arrow-right');
 var coachesPage = document.querySelector('.coaches');
+
+var reviewsSlides = document.querySelectorAll('.reviews__item');
+var reviewsPrev = document.querySelector('.reviews__arrow-left');
+var reviewsNext = document.querySelector('.reviews__arrow-right');
+var reviewsPage = document.querySelector('.reviews');
 
 
 function switchTabs() {
@@ -48,7 +53,7 @@ if (subscriptionsPage) {
 }
 
 
-function switchSlider(step) {
+function switchSlider(step, slides, prev, next) {
   var startIndex = 0;
   var endIndex = step;
 
@@ -88,18 +93,21 @@ function switchSlider(step) {
 }
 
 
-function changeSlider() {
+function changeCoachesSlider() {
   if (window.matchMedia('(max-width: 767px)').matches) {
-    switchSlider(1);
+    switchSlider(1, coachesSlides, coachesPrev, coachesNext);
   } else if (window.matchMedia('(max-width: 1199px)').matches) {
-    switchSlider(2);
+    switchSlider(2, coachesSlides, coachesPrev, coachesNext);
   } else {
-    switchSlider(4);
+    switchSlider(4, coachesSlides, coachesPrev, coachesNext);
   }
 }
 
 if (coachesPage) {
-  changeSlider();
-  window.addEventListener('resize', changeSlider);
+  changeCoachesSlider();
+  window.addEventListener('resize', changeCoachesSlider);
 }
 
+if (reviewsPage) {
+  switchSlider(1, reviewsSlides, reviewsPrev, reviewsNext);
+}
