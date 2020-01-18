@@ -380,32 +380,82 @@
 
   .page-footer__bottom-block {
     @include wrap-mobile;
-    padding-top: 50px;
+    padding-top: 48px;
     padding-bottom: 50px;
-    flex-direction: column;
     position: relative;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   .page-footer__logo {
     font-size: 20px;
     line-height: 20px;
     position: absolute;
-    top: 50px;
-    left: 20px;
+    top: 48px;
+    left: 15px;
+  }
+
+  .page-footer__nav-link {
+    font-size: 16px;
+    line-height: 19px;
   }
 
   .page-footer__nav-list {
     margin-left: 0;
-    max-width: 250px;
+    width: 100%;
     justify-content: space-between;
   }
 
-  // .page-footer__nav-service
-
-  .page-footer__nav-list li:first-child {
-    margin-left: 160px;
+  .page-footer__nav-list li {
+    width: calc(50% - 15px);
+    margin-right: 0;
+    margin-bottom: 18px;
   }
 
+  .page-footer__item-promo {
+    margin-left: calc(50% + 15px);
+  }
 
+  .page-footer__item-service {
+    order: 1;
+  }
+
+  .page-footer__item-subscriptions {
+    order: 3;
+  }
+
+  .page-footer__item-coaches {
+    order: 2;
+  }
+
+  .page-footer__item-table {
+    order: 4;
+  }
+
+  .page-footer__social-list {
+    align-items: center;
+  }
+
+  .page-footer__vk-img {
+    width: 32px;
+    height: 17px;
+  }
+
+  .page-footer__instagram-img {
+    width: 27px;
+    height: 27px;
+  }
+
+  .page-footer__facebook-img {
+    width: 14px;
+    height: 27px;
+  }
+
+  .page-footer__social-list {
+    max-width: 100%;
+    margin-top: 15px;
+  }
+
+  .page-footer__social-list li {
+    margin-right: 35px;
+  }
 }

@@ -72,7 +72,7 @@
               <p>Групповые занятия</p>
               <p>Кардио-зона</p>
             </div>
-            <button class="intro__button" type="button">Купить абонемент</button>
+            <a class="intro__button" href="#subscriptions">Купить абонемент</a>
           </div>
           <ul class="intro__social-list">
             <li><a class="intro__social-item" href="#">FB</a></li>
@@ -82,7 +82,7 @@
         </div>
       </div>
     </section>
-    <section class="gym">
+    <section class="gym" id="gym">
       <div class="gym__description-container">
         <h2 class="gym__title">Тренажерный зал</h2>
         <span>Просторный зал площадью 900 кв/м</span>
@@ -106,7 +106,7 @@
       </div>
     </section>
 
-    <section class="subscriptions">
+    <section class="subscriptions" id="subscriptions">
       <div class="subscriptions__wrap">
         <h2 class="subscriptions__title">Абонементы</h2>
         <div class="subscriptions__controls-wrap">
@@ -269,7 +269,7 @@
 
     </section>
 
-    <section class="coaches">
+    <section class="coaches" id="coaches">
 
       <h2 class="coaches__title">Тренеры</h2>
       <div class="coaches__container">
@@ -454,7 +454,7 @@
         </div>
       </div>
     </div></section>
-    <section class="promo">
+    <section class="promo" id="promo">
       <h2 class="promo__title">Акции</h2>
       <div class="promo__container">
         <div class="promo__main-promo">
@@ -564,18 +564,18 @@
         <a class="page-footer__logo">Supergym</a>
         <ul class="page-footer__nav-list">
           <li class="page-footer__item-service">
-            <a class="page-footer__nav-link" href="#">Услуги</a>
+            <a class="page-footer__nav-link" href="#gym">Услуги</a>
           </li>
           <li class="page-footer__item-subscriptions">
-            <a class="page-footer__nav-link" href="#">Абонементы</a>
+            <a class="page-footer__nav-link" href="#subscriptions">Абонементы</a>
           </li>
           <li class="page-footer__item-promo">
-            <a class="page-footer__nav-link" href="#">Акции</a>
+            <a class="page-footer__nav-link" href="#promo">Акции</a>
           </li>
           <li class="page-footer__item-coaches">
-            <a class="page-footer__nav-link" href="#">Тренеры</a>
+            <a class="page-footer__nav-link" href="#coaches">Тренеры</a>
           </li>
-          <li>
+          <li class="page-footer__item-table">
             <a class="page-footer__nav-link" href="#">Расписание</a>
           </li>
         </ul>
@@ -584,7 +584,7 @@
           <li>
             <a class="page-footer__social-link" href="#">
               <span class="visually-hidden">Мы Вконтакте</span>
-              <svg class="page-footer__social-img" width="24" height="13">
+              <svg class="page-footer__vk-img" width="24" height="13">
                 <use xlink:href="#vk"></use>
               </svg>
             </a>
@@ -592,7 +592,7 @@
           <li>
             <a class="page-footer__social-link" href="#">
               <span class="visually-hidden">Мы в Инстаграме</span>
-              <svg class="page-footer__social-img" width="24" height="24">
+              <svg class="page-footer__instagram-img" width="24" height="24">
                 <use xlink:href="#insta"></use>
               </svg>
             </a>
@@ -600,7 +600,7 @@
           <li>
             <a class="page-footer__social-link" href="#">
               <span class="visually-hidden">Мы в Фейсбуке</span>
-              <svg class="page-footer__social-img" width="12" height="24">
+              <svg class="page-footer__facebook-img" width="12" height="24">
                 <use xlink:href="#facebook"></use>
               </svg>
             </a>
@@ -611,8 +611,7 @@
     </div>
   </footer>
 
-
-
+  <script src="https://unpkg.com/imask"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
