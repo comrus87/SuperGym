@@ -13,6 +13,13 @@
 }
 
 .coaches__info {
+  width: 100%;
+  min-height: 294px;
+  background: rgba(16, 38, 84, 0.89);
+  padding: 57px 25px 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: none;
 }
 
@@ -67,16 +74,6 @@
 
 .coaches__name-hover {
   margin: 0;
-}
-
-.coaches__info {
-  width: 100%;
-  min-height: 294px;
-  background: rgba(16, 38, 84, 0.89);
-  padding: 57px 25px 10px;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .coaches__info p {

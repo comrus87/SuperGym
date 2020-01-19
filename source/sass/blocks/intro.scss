@@ -15,7 +15,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
 
 .intro__main {
@@ -32,7 +31,7 @@
   margin-left: 18px;
 }
 
-.page-header__logo {
+.intro__logo {
   color: $white-color;
   font-family: $bebas;
   font-size: 26px;
@@ -41,7 +40,7 @@
   text-transform: uppercase;
 }
 
-.page-header__phone {
+.intro__phone {
   color: $white-color;
   font-family: $bebas;
   font-size: 26px;
@@ -95,7 +94,7 @@
   background-color: transparent;
   border: 4px solid $white-color;
   color: $white-color;
-  font-family: Roboto Condensed;
+  font-family: $roboto-condensed;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
@@ -154,12 +153,12 @@
     display: none;
   }
 
-  .page-header__logo {
+  .intro__logo {
     font-size: 24px;
     line-height: 24px;
   }
 
-  .page-header__phone {
+  .intro__phone {
     font-size: 24px;
     line-height: 24px;
     letter-spacing: 0.02em;
@@ -207,8 +206,8 @@
     padding-bottom: 80px;
   }
 
-  .page-header__logo,
-  .page-header__phone {
+  .intro__logo,
+  .intro__phone {
     font-size: 20px;
     line-height: 20px;
   }

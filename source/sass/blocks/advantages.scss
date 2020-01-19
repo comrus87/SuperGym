@@ -23,7 +23,7 @@
   font-size: 71px;
   line-height: 71px;
   background: linear-gradient(#d10a42, #0041ca);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0 30px 0 0;
 }
@@ -140,7 +140,7 @@
 .advantages__bottom-block {
   display: flex;
   padding: 0 10px 0 20px;
-  margin-top: -82px ;
+  margin-top: -82px;
 }
 
 .advantages__area-description {
@@ -292,6 +292,7 @@
   .advantages__parking {
     margin-top: 34px;
   }
+
   .advantages__parking h3,
   .advantages__comfort h3,
   .advantages__experience h3 {

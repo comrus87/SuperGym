@@ -4,8 +4,8 @@
 }
 
 .page-footer__top-block {
-  display: flex;
   @include wrap-desktop;
+  display: flex;
 }
 
 .page-footer__form {
@@ -94,7 +94,7 @@
 
 .page-footer__contacts-first-block {
   width: 235px;
-  border-right: 1px solid #74819C;
+  border-right: 1px solid #74819c;
   margin-right: 60px;
   padding-left: 4px;
 }
@@ -149,15 +149,13 @@
   }
 }
 
-// Здесть нижний футер
-
 .page-footer__bottom-wrap {
   background: #030a1a;
 }
 
 .page-footer__bottom-block {
-  display: flex;
   @include wrap-desktop;
+  display: flex;
   padding-top: 43px;
   padding-bottom: 43px;
   justify-content: space-between;
@@ -189,7 +187,6 @@
 }
 
 .page-footer__nav-link {
-  color: $white-color;
   font-family: $roboto-condensed;
   font-weight: 400;
   font-size: 14px;
@@ -433,6 +430,8 @@
 
   .page-footer__social-list {
     align-items: center;
+    max-width: 100%;
+    margin-top: 15px;
   }
 
   .page-footer__vk-img {
@@ -448,11 +447,6 @@
   .page-footer__facebook-img {
     width: 14px;
     height: 27px;
-  }
-
-  .page-footer__social-list {
-    max-width: 100%;
-    margin-top: 15px;
   }
 
   .page-footer__social-list li {
