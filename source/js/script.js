@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   if (phone) {
-    var phoneModalMask = IMask(phone, {mask: '+{7}(000)000-00-00'});
+    IMask(phone, {mask: '+{7}(000)000-00-00'});
   }
 
   if (form) {
