@@ -113,11 +113,15 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   if (coachesPage) {
+    coachesPrev.classList.remove('no-js');
+    coachesNext.classList.remove('no-js');
     changeCoachesSlider();
     window.addEventListener('resize', changeCoachesSlider);
   }
 
   if (reviewsPage) {
+    reviewsPrev.classList.remove('no-js');
+    reviewsNext.classList.remove('no-js');
     switchSlider(1, reviewsSlides, reviewsPrev, reviewsNext);
   }
 

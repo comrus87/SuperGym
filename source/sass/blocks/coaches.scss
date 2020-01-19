@@ -139,6 +139,10 @@
   right: -57px;
 }
 
+.no-js {
+  display: none;
+}
+
 
 @media (max-width: $tablet-width) {
   .coaches {
