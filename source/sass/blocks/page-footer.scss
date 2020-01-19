@@ -15,10 +15,7 @@
 }
 
 .page-footer__form-title {
-  font-family: $bebas;
-  font-size: 49px;
-  line-height: 49px;
-  letter-spacing: 0.03em;
+  @include title-desktop;
   color: $white-color;
   margin: 0 0 40px 0;
 }
@@ -36,6 +33,7 @@
   color: $white-color;
   width: 46.3%;
   padding: 8px 0 7px;
+  border-radius: none;
 
   &::placeholder {
     font-family: $roboto-condensed;
@@ -75,10 +73,7 @@
 }
 
 .page-footer__contacts-title {
-  font-family: $bebas;
-  font-size: 49px;
-  line-height: 49px;
-  letter-spacing: 0.03em;
+  @include title-desktop;
   color: $dark-blue-color;
   margin: 0 0 45px 0;
 }
@@ -244,8 +239,7 @@
   }
 
   .page-footer__form-title {
-    font-size: 42px;
-    line-height: 42px;
+    @include title-tablet;
     margin: 0 0 34px 0;
   }
 
@@ -273,8 +267,7 @@
   }
 
   .page-footer__contacts-title {
-    font-size: 42px;
-    line-height: 42px;
+    @include title-tablet;
     margin: 0 0 41px 0;
   }
 
@@ -335,8 +328,7 @@
   }
 
   .page-footer__form-title {
-    font-size: 32px;
-    line-height: 32px;
+    @include title-mobile;
     margin: 0 0 35px 0;
   }
 
@@ -359,8 +351,7 @@
   }
 
   .page-footer__contacts-title {
-    font-size: 32px;
-    line-height: 32px;
+    @include title-mobile;
     margin: 0 0 41px 0;
   }
 

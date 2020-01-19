@@ -12,11 +12,8 @@
 }
 
 .gym__title {
+  @include title-desktop;
   color: $dark-blue-color;
-  font-family: $bebas;
-  font-size: 49px;
-  line-height: 49px;
-  letter-spacing: 0.03em;
   margin: 45px 0 0 0;
 }
 
@@ -105,8 +102,7 @@
   }
 
   .gym__title {
-    font-size: 42px;
-    line-height: 42px;
+    @include title-tablet;
     margin: 0 auto;
   }
 
@@ -165,8 +161,7 @@
   }
 
   .gym__title {
-    font-size: 32px;
-    line-height: 32px;
+    @include title-mobile;
     margin: 0;
   }
 

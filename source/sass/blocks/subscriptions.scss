@@ -23,10 +23,7 @@
 
 .subscriptions__title {
   color: $dark-blue-color;
-  font-family: $bebas;
-  font-size: 49px;
-  line-height: 49px;
-  letter-spacing: 0.03em;
+  @include title-desktop;
   margin: 0 auto 42px;
   text-align: center;
 }
@@ -195,8 +192,7 @@
   }
 
   .subscriptions__title {
-    font-size: 42px;
-    line-height: 42px;
+    @include title-tablet;
     margin: 0 auto 36px;
   }
 
@@ -243,8 +239,7 @@
   }
 
   .subscriptions__title {
-    font-size: 32px;
-    line-height: 32px;
+    @include title-mobile;
     margin: 0 auto 26px;
   }
 

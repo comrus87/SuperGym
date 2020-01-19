@@ -4,10 +4,7 @@
 }
 
 .coaches__title {
-  font-family: $bebas;
-  font-size: 49px;
-  line-height: 49px;
-  letter-spacing: 0.03em;
+  @include title-desktop
   color: $dark-blue-color;
   margin: 0 0 54px 0;
 }
@@ -151,8 +148,7 @@
   }
 
   .coaches__title {
-    font-size: 42px;
-    line-height: 42px;
+    @include title-tablet;
     margin: 0 auto 44px;
     text-align: center;
   }
@@ -187,8 +183,7 @@
   }
 
   .coaches__title {
-    font-size: 32px;
-    line-height: 32px;
+    @include title-mobile;
     margin: 0 auto 45px;
   }
 

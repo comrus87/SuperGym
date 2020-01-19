@@ -21,3 +21,20 @@
   margin: 0 auto;
   padding: 0 103px;
 }
+
+@mixin title-desktop {
+  font-family: $bebas;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+}
+
+@mixin title-tablet {
+  font-size: 42px;
+  line-height: 42px;
+}
+
+@mixin title-mobile {
+  font-size: 32px;
+  line-height: 32px;
+}
