@@ -14,7 +14,7 @@
 .gym__title {
   @include title-desktop;
   color: $dark-blue-color;
-  margin: 45px 0 0 0;
+  margin: 46px 0 0 0;
 }
 
 .gym__description-container {
@@ -85,7 +85,7 @@
 @media (max-width: $tablet-width) {
   .gym {
     @include wrap-tablet;
-    padding: 97px 45px 100px;
+    padding: 99px 45px 100px;
     flex-direction: column;
   }
 
@@ -112,11 +112,11 @@
   }
 
   .gym__description-container span {
-    margin: 12px auto 35px;
+    margin: 10px auto 33px;
   }
 
   .gym__description-container p {
-    margin: 0 auto 42px;
+    margin: 0 auto 43px;
     width: 502px;
     text-align: center;
   }
@@ -157,7 +157,7 @@
 
 @media (max-width: $mobile-width) {
   .gym {
-    padding: 67px 0 70px;
+    padding: 68px 0 70px;
   }
 
   .gym__title {
@@ -183,11 +183,11 @@
   }
 
   .gym__description-container span {
-    margin: 8px 0 25px;
+    margin: 7px 0 24px;
   }
 
   .gym__description-container p {
-    margin: 0 auto 32px;
+    margin: 0 auto 33px;
     width: 100%;
     padding-right: 32px;
     text-align: left;

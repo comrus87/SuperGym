@@ -1,6 +1,6 @@
 .competitions {
   @include wrap-desktop;
-  padding: 120px 103px 117px;
+  padding: 120px 103px 119px;
 }
 
 .competitions__img-tablet,
@@ -22,10 +22,11 @@
   font-family: $bebas;
   font-size: 90px;
   line-height: 90px;
+  font-weight: 700;
   letter-spacing: 0.03em;
   color: $white-color;
   width: 201px;
-  margin: -4px 10px 0 0;
+  margin: 0 10px 0 0;
 }
 
 .competitions__block-data p,
@@ -38,7 +39,7 @@
 }
 
 .competitions__description {
-  margin: 14px 0 46px 0;
+  margin: 10px 0 46px 0;
 }
 
 .competitions__count-data,
@@ -135,7 +136,7 @@
 @media (max-width: $tablet-width) {
   .competitions {
     @include wrap-tablet;
-    padding: 100px 45px 96px;
+    padding: 100px 45px 98px;
   }
 
   .competitions__img-desktop,
@@ -151,7 +152,7 @@
     font-size: 52px;
     line-height: 52px;
     width: 117px;
-    margin: -2px 0 0 0;
+    margin: 0;
   }
 
   .competitions__block-data p,
@@ -206,14 +207,14 @@
   }
 
   .competitions__description {
-    margin: 4px 0 28px 0;
+    margin: 2px 0 28px 0;
   }
 }
 
 @media (max-width: $mobile-width) {
   .competitions {
     @include wrap-mobile;
-    padding: 70px 15px 68px;
+    padding: 70px 15px 69px;
   }
 
   .competitions__img-desktop,

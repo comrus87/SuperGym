@@ -7,8 +7,8 @@
 
 .intro__wrap {
   @include wrap-desktop;
-  padding-top: 28px;
-  padding-bottom: 96px;
+  padding-top: 30px;
+  padding-bottom: 95px;
 }
 
 .intro__top-block {
@@ -28,12 +28,13 @@
   flex-direction: column;
   align-items: flex-end;
   width: 380px;
-  margin-left: 18px;
+  margin-left: 15px;
 }
 
 .intro__logo {
   color: $white-color;
   font-family: $bebas;
+  font-weight: 700;
   font-size: 26px;
   line-height: 26px;
   letter-spacing: 0.02em;
@@ -43,6 +44,7 @@
 .intro__phone {
   color: $white-color;
   font-family: $bebas;
+  font-weight: 700;
   font-size: 26px;
   line-height: 26px;
   letter-spacing: 0.03em;
@@ -56,16 +58,18 @@
 .intro__main-container span {
   color: $white-color;
   font-family: $bebas;
+  font-weight: 400;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
-  margin-bottom: 4px;
-  margin-top: 115px;
+  margin-bottom: 12px;
+  margin-top: 112px;
 }
 
 .intro__title {
   color: $white-color;
   font-family: $bebas;
+  font-weight: 700;
   font-size: 109px;
   line-height: 109px;
   text-align: right;
@@ -75,8 +79,8 @@
 }
 
 .intro__description {
-  margin-right: 266px;
-  margin-top: -84px;
+  margin-right: 263px;
+  margin-top: -91px;
 }
 
 .intro__description p {
@@ -99,7 +103,7 @@
   font-size: 12px;
   line-height: 14px;
   display: block;
-  width: 234px;
+  width: 230px;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -115,7 +119,7 @@
 
 .intro__social-list {
   @include list-default;
-  margin: 0 -2px -4px 0;
+  margin: 0;
 }
 
 .intro__social-list a {
@@ -123,7 +127,7 @@
   font-family: $roboto-condensed;
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 12px;
   text-transform: uppercase;
   display: block;
   margin-top: 20px;
@@ -145,8 +149,8 @@
 
   .intro__wrap {
     @include wrap-tablet;
-    padding-top: 38px;
-    padding-bottom: 105px;
+    padding-top: 39px;
+    padding-bottom: 106px;
   }
 
   .intro__social-list {
@@ -167,7 +171,8 @@
   .intro__main-container span {
     font-size: 34px;
     line-height: 34px;
-    margin-top: 72px;
+    margin-top: 73px;
+    margin-bottom: 6px;
   }
 
   .intro__title {
@@ -188,7 +193,7 @@
 
   .intro__description {
     margin-right: 212px;
-    margin-top: -76px;
+    margin-top: -80px;
   }
 }
 
@@ -202,7 +207,7 @@
 
   .intro__wrap {
     @include wrap-mobile;
-    padding-top: 18px;
+    padding-top: 20px;
     padding-bottom: 80px;
   }
 
@@ -215,8 +220,8 @@
   .intro__main-container span {
     font-size: 28px;
     line-height: 28px;
-    margin-top: 75px;
-    margin-bottom: 7px;
+    margin-top: 71px;
+    margin-bottom: 13px;
   }
 
   .intro__title {
@@ -227,7 +232,7 @@
 
   .intro__button {
     width: 100%;
-    margin-top: 55px;
+    margin-top: 56px;
   }
 
   .intro__main-container {
@@ -236,6 +241,6 @@
 
   .intro__description {
     margin-right: 178px;
-    margin-top: -70px;
+    margin-top: -75px;
   }
 }

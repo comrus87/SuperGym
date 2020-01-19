@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var coachesPrev = document.querySelector('.coaches__arrow-left');
   var coachesNext = document.querySelector('.coaches__arrow-right');
   var coachesPage = document.querySelector('.coaches');
+  var coachesList = document.querySelector('.coaches__list');
 
   var reviewsSlides = document.querySelectorAll('.reviews__item');
   var reviewsPrev = document.querySelector('.reviews__arrow-left');
@@ -122,6 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (reviewsPage) {
     reviewsPrev.classList.remove('no-js');
     reviewsNext.classList.remove('no-js');
+    coachesList.classList.remove('coaches__list--no-js');
     switchSlider(1, reviewsSlides, reviewsPrev, reviewsNext);
   }
 

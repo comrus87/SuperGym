@@ -4,13 +4,13 @@
 
 .advantages__wrap {
   @include wrap-desktop;
-  padding: 116px 164px 103px;
+  padding: 118px 164px 103px;
 }
 
 .advantages__title {
   @include title-desktop;
   color: $dark-blue-color;
-  margin: 0 0 60px 0;
+  margin: 0 0 58px 0;
   text-align: center;
 }
 
@@ -151,13 +151,13 @@
 @media (max-width: $tablet-width) {
   .advantages__wrap {
     @include wrap-tablet;
-    padding-top: 96px;
+    padding-top: 98px;
     padding-bottom: 80px;
   }
 
   .advantages__title {
     @include title-tablet;
-    margin: 0 0 47px 0;
+    margin: 0 0 45px 0;
   }
 
   .advantages__count {
@@ -235,7 +235,7 @@
 @media (max-width: $mobile-width) {
   .advantages__wrap {
     @include wrap-mobile;
-    padding: 67px 0 65px;
+    padding: 69px 0 65px;
   }
 
   .advantages__title {

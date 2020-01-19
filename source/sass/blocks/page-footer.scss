@@ -11,7 +11,7 @@
 .page-footer__form {
   width: 50%;
   background: transparent;
-  padding-top: 65px;
+  padding-top: 67px;
 }
 
 .page-footer__form-title {
@@ -32,7 +32,7 @@
   line-height: 16px;
   color: $white-color;
   width: 46.3%;
-  padding: 8px 0 7px;
+  padding: 7px 0 5px;
   border-radius: 0;
 
   &::placeholder {
@@ -64,7 +64,7 @@
   padding: 17px 0;
   cursor: pointer;
   width: 410px;
-  margin-top: 26px;
+  margin-top: 27px;
 
   &:hover,
   &:focus {
@@ -75,7 +75,7 @@
 .page-footer__contacts-title {
   @include title-desktop;
   color: $dark-blue-color;
-  margin: 0 0 45px 0;
+  margin: 0 0 43px 0;
 }
 
 .page-footer__contacts h3 {
@@ -113,7 +113,7 @@
 
 .page-footer__contacts {
   width: 50%;
-  padding: 65px 0 64px 120px;
+  padding: 67px 0 64px 120px;
 }
 
 .page-footer__contacts-container {
@@ -159,6 +159,7 @@
 .page-footer__logo {
   color: $white-color;
   font-family: $bebas;
+  font-weight: 700;
   font-size: 26px;
   line-height: 26px;
   letter-spacing: 0.02em;
@@ -233,18 +234,18 @@
 
   .page-footer__form {
     @include wrap-tablet;
-    padding: 66px 162px 68px 133px;
+    padding: 69px 162px 68px 133px;
     width: 100%;
     background: $dark-blue-color;
   }
 
   .page-footer__form-title {
     @include title-tablet;
-    margin: 0 0 34px 0;
+    margin: 0 0 33px 0;
   }
 
   .page-footer__form-input {
-    width: 43.5%;
+    width: 43.7%;
   }
 
   .page-footer__input-container {
@@ -257,7 +258,7 @@
 
   .page-footer__contacts {
     width: 100%;
-    padding: 66px 133px 67px;
+    padding: 69px 133px 67px;
   }
 
   .page-footer__contacts-first-block {
@@ -268,7 +269,7 @@
 
   .page-footer__contacts-title {
     @include title-tablet;
-    margin: 0 0 41px 0;
+    margin: 0 0 38px 0;
   }
 
   .page-footer__contacts h3 {
@@ -324,7 +325,7 @@
 @media (max-width: $mobile-width) {
   .page-footer__form {
     @include wrap-mobile;
-    padding: 67px 15px;
+    padding: 69px 15px 67px;
   }
 
   .page-footer__form-title {
@@ -334,7 +335,7 @@
 
   .page-footer__form-input {
     width: 100%;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
   }
 
   .page-footer__form-button {

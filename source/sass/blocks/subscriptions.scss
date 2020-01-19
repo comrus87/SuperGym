@@ -17,14 +17,14 @@
 
 .subscriptions__wrap {
   @include wrap-desktop;
-  padding-top: 116px;
+  padding-top: 118px;
   padding-bottom: 80px;
 }
 
 .subscriptions__title {
   @include title-desktop;
   color: $dark-blue-color;
-  margin: 0 auto 42px;
+  margin: 0 auto 41px;
   text-align: center;
 }
 
@@ -125,8 +125,8 @@
   line-height: 100px;
   display: block;
   text-align: center;
-  margin-bottom: -80px;
-  margin-top: 45px;
+  margin-bottom: -70px;
+  margin-top: 35px;
   color: #e8e8e8;
   opacity: 0.48;
 }
@@ -188,12 +188,12 @@
 
   .subscriptions__wrap {
     @include wrap-tablet;
-    padding: 96px 163px 60px;
+    padding: 98px 163px 60px;
   }
 
   .subscriptions__title {
     @include title-tablet;
-    margin: 0 auto 36px;
+    margin: 0 auto 34px;
   }
 
   .subscriptions__controls-list li {
@@ -235,12 +235,12 @@
 
   .subscriptions__wrap {
     @include wrap-mobile;
-    padding: 67px 15px 34px;
+    padding: 69px 15px 34px;
   }
 
   .subscriptions__title {
     @include title-mobile;
-    margin: 0 auto 26px;
+    margin: 0 auto 23px;
   }
 
   .subscriptions__controls-list li {
@@ -250,14 +250,15 @@
   .subscriptions__item-month {
     font-size: 16px;
     line-height: 16px;
+    padding-bottom: 15px;
   }
 
   .subscriptions__controls-list {
-    padding-bottom: 11px;
+    padding-bottom: 13px;
   }
 
   .subscriptions__tabs-list {
-    margin-top: 35px;
+    margin-top: 34px;
   }
 
   .subscriptions__tabs-list li {
@@ -273,7 +274,7 @@
   .subscriptions__price {
     font-size: 48px;
     line-height: 72px;
-    margin-right: 12px;
+    margin-right: 11px;
   }
 
   .subscriptions__price-ruble {
