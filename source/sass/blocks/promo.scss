@@ -5,7 +5,7 @@
 }
 
 .promo__title {
-  @include title-desktop
+  @include title-desktop;
   color: $dark-blue-color;
   text-align: center;
   margin-bottom: 53px;

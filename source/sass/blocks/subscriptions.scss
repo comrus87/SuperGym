@@ -22,8 +22,8 @@
 }
 
 .subscriptions__title {
-  color: $dark-blue-color;
   @include title-desktop;
+  color: $dark-blue-color;
   margin: 0 auto 42px;
   text-align: center;
 }

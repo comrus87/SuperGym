@@ -4,7 +4,7 @@
 }
 
 .coaches__title {
-  @include title-desktop
+  @include title-desktop;
   color: $dark-blue-color;
   margin: 0 0 54px 0;
 }
