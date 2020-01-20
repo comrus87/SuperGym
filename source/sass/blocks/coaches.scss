@@ -32,7 +32,7 @@
 
 .coaches__item {
   position: relative;
-  width: 22.4%;
+  width: calc(25% - 30px);
   min-height: 294px;
   cursor: pointer;
   margin-right: 40px;
