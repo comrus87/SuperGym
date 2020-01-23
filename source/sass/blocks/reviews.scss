@@ -56,6 +56,7 @@
 .reviews__item {
   display: block;
   width: 100%;
+  min-height: 242px;
   background-color: #1c3374;
   position: relative;
   padding: 54px 62px 57px 170px;
@@ -135,6 +136,7 @@
   }
 
   .reviews__item {
+    min-height: 335px;
     padding: 40px 25px 35px;
   }
 
