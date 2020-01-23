@@ -88,7 +88,7 @@
   position: relative;
   border-style: solid;
   border-width: 7px;
-  border-image: linear-gradient($white-color);
+  border-image: linear-gradient(to bottom right, $white-color, $white-color);
 
   &:hover {
     border-image: linear-gradient(to bottom right, #d10a42, #00359f);

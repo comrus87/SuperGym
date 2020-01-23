@@ -70,10 +70,9 @@ document.addEventListener('DOMContentLoaded', function () {
     var endIndex = step;
 
     function showSlide(n, k) {
-
-      slides.forEach(function (item) {
-        item.style.display = 'none';
-      });
+      for (var j = 0; j < slides.length; j++) {
+        slides[j].style.display = 'none';
+      }
 
       for (var i = n; i < k; i++) {
         if (slides[i]) {
