@@ -127,7 +127,7 @@
   }
 
   .gym__video-container {
-    height: 167px;
+    max-height: 167px;
     width: 266px;
     margin-right: 0;
     margin-top: -84px;
@@ -176,10 +176,9 @@
   .gym__video-mobile {
     display: block;
     width: 100%;
-    height: auto;
   }
 
-  .gym__video-container img {
+  .gym__photo-mobile {
     height: auto;
   }
 
@@ -201,9 +200,23 @@
   .gym__video-container {
     width: 100%;
     margin-top: 40px;
+    padding-top: 50%;
+    position: relative;
+  }
+
+  .gym__video-container img {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
   }
 
   .gym__video-container button {
-     margin: 15% auto 0;
+    margin: 0;
+    position: absolute;
+    top: calc(50% - 36.5px);
+    left: calc(50% - 36.5px);
   }
 }
