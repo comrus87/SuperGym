@@ -176,6 +176,11 @@
   .gym__video-mobile {
     display: block;
     width: 100%;
+    height: auto;
+  }
+
+  .gym__video-container img {
+    height: auto;
   }
 
   .gym__description-container {
@@ -196,5 +201,9 @@
   .gym__video-container {
     width: 100%;
     margin-top: 40px;
+  }
+
+  .gym__video-container button {
+     margin: 15% auto 0;
   }
 }
