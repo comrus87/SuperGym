@@ -16,6 +16,10 @@
   display: none;
 }
 
+.promo__img-desktop {
+  height: 100%;
+}
+
 .promo__container {
   display: flex;
 }
@@ -169,6 +173,7 @@
   .promo__list {
     flex-direction: row;
     width: 100%;
+    flex-wrap: wrap;
   }
 
   .promo__list li {
@@ -182,7 +187,7 @@
     padding-right: 60px;
   }
 
-  .promo__list li:last-child {
+  .promo__list li:nth-child(2n) {
     margin-right: 0;
   }
 }
