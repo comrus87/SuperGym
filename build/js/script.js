@@ -65,6 +65,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Слайдеры
 
+  function optimizationSlider() {
+    var maxHeight = 0;
+
+    for (var i = 0; i < reviewsSlides.length; i++) {
+      if (maxHeight < reviewsSlides[i].clientHeight) {
+        maxHeight = reviewsSlides[i].clientHeight;
+      }
+    }
+
+    for (var j = 0; j < reviewsSlides.length; j++) {
+      reviewsSlides[j].style.height = maxHeight + 'px';
+    }
+  }
+
+  optimizationSlider();
+
   function switchSlider(step, slides, prev, next) {
     var startIndex = 0;
     var endIndex = step;
